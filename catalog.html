@@ -17,93 +17,87 @@
 	<body class="page">
 		
 		<!-- header start -->
-			<header class="header">
+		<header class="header">
 
-				<!-- header-content start -->
-					<div class="header-content">
-						<div class="container">
-							<div class="header-content__inner">
-						
-								<!-- header-logo start -->
-									<div class="header-logo">
-										<a class="header-logo__link" href="index.html">
-											<img class="header-logo__img" src="images/header-logo/header-logo__img.svg" height="35" width="164" alt="Логотип интернет магазина 'Девайс'">
-										</a>
-									</div>
-								<!-- header-logo end -->
+			<!-- header-content start -->
+				<div class="header-content">
+					<div class="container">
+						<div class="header-content__inner header-content__inner--catalog">
+					
+							<!-- header-logo start -->
+								<div class="header-logo">
+									<a class="header-logo__link" href="index.html">
+										<img class="header-logo__img" src="images/header-logo/header-logo__img.svg" height="35" width="164" alt="Логотип интернет магазина 'Девайс'">
+									</a>
+								</div>
+							<!-- header-logo end -->
 
-								<!-- header-nav start -->
-									<nav class="header-nav">
-										<ul class="header-nav__list">
-											<li class="header-nav__item">
+							<!-- header-nav start -->
+								<nav class="header-nav">
+									<ul class="header-nav__list">		
+										<li class="header-nav__item">
 
-												<!-- header-search start -->
-                          <form class="header-search" action="https://echo.htmlacademy.ru" method="get">
-                            <input class="header-search__input" name="search-input" type="search" placeholder="Поиск по сайту">
-                            <button class="header-search__button" name="search-submit" type="submit">Найти</button>
-												  </form>             
-												<!-- header-search end -->
-												 
-											</li>
-											<li class="header-nav__item"><a class="header-nav__link" href="#">Войти</a></li>
-											<li class="header-nav__item"><a class="header-nav__link" href="#">Сравнить</a></li>
-											<li class="header-nav__item"><a class="header-nav__link" href="#">Корзина</a></li>
-										</ul>
-									</nav>
-								<!-- header-nav end -->
+											<!-- header-search start -->
+												<form class="header-search" action="https://echo.htmlacademy.ru" method="get">
+													<label class="visually-hidden" for="header-search__input">Поиск по сайту</label>
+													<input class="header-search__input" name="search-input" type="search" id="header-search__input" placeholder="Поиск по сайту">
+													<button class="header-search__button" name="search-submit" type="submit"><span class="header-search__button-text">Найти</span></button>
+												</form>             
+											<!-- header-search end -->
+											 
+										</li>
+										<li class="header-nav__item header-nav__item--login"><a class="header-nav__link header-nav__link--login" href="#">Войти</a></li>
+										<li class="header-nav__item header-nav__item--compare"><a class="header-nav__link header-nav__link--compare" href="#">Сравнить</a></li>
+										<li class="header-nav__item header-nav__item--cart"><a class="header-nav__link header-nav__link--cart" href="#">Корзина</a></li>
+									</ul>
+								</nav>
+							<!-- header-nav end -->
 
-								<!-- header-services start -->
-									<nav class="header-services">
-										<ul class="header-services__list">
-											<li class="header-services__item">
+							<!-- header-services start -->
+								<nav class="header-services">
+									<ul class="header-services__list">
+										<li class="header-services__item header-services__item--catalog">
+											<a class="header-services__link header-services__link--catalog" href="#">Каталог товаров</a>
 
-												<!-- header-catalog start -->
-													<div class="header-catalog">
-														<a class="header-catalog__link" href="#">Каталог товаров</a>
+												<!-- header-dropdown start-->
+													<nav class="header-dropdown">
+														<ul class="header-dropdown__list">
+															<li class="header-dropdown__item"><a class="header-dropdown__link" href="#">Виртуальная реальность</a></li>
+															<li class="header-dropdown__item"><a class="header-dropdown__link" href="catalog.html">Моноподы для селфи</a></li>
+															<li class="header-dropdown__item"><a class="header-dropdown__link" href="#">Экшн-камеры</a></li>
+														</ul>
+														<ul class="header-dropdown__list">
+															<li class="header-dropdown__item"><a class="header-dropdown__link" href="#">Фитнес-браслеты</a></li>
+															<li class="header-dropdown__item"><a class="header-dropdown__link" href="#">Умные часы</a></li>
+														</ul>
+														<ul class="header-dropdown__list">
+															<li class="header-dropdown__item"><a class="header-dropdown__link" href="#">Квадрокоптер</a></li>
+														</ul>
+													</nav>
+												<!-- header-dropdown end -->
 
-															<!-- header-dropdown start-->
-                          			<div class="header-dropdown">
-                            			<ul class="header-dropdown__list">
-                              			<li class="header-dropdown__item"><a class="header-dropdown__link" href="#">Виртуальная реальность</a></li>
-                              			<li class="header-dropdown__item"><a class="header-dropdown__link" href="#">Моноподы для селфи</a></li>
-                              			<li class="header-dropdown__item"><a class="header-dropdown__link" href="#">Экшн-камеры</a></li>
-																	</ul>
-																	<ul class="header-dropdown__list">
-                              			<li class="header-dropdown__item"><a class="header-dropdown__link" href="#">Фитнес-браслеты</a></li>
-                              			<li class="header-dropdown__item"><a class="header-dropdown__link" href="#">Умные часы</a></li>
-																	</ul>
-																	<ul class="header-dropdown__list">
-                              			<li class="header-dropdown__item"><a class="header-dropdown__link" href="#">Квадрокоптер</a></li>
-                            			</ul>
-																</div>
-															<!-- header-dropdown end -->
-
-													</div>
-												<!-- header-catalog end -->
-
-                      </li>
-											<li class="header-services__item"><a class="header-services__link" href="#">Доставка</a></li>
-											<li class="header-services__item"><a class="header-services__link" href="#">Гарантия</a></li>
-											<li class="header-services__item"><a class="header-services__link" href="#">Контакты</a></li>
-                    </ul>
-									</nav>
-								<!-- header-services end -->
-
-							</div>
+										</li>
+										<li class="header-services__item header-services__item--delivery"><a class="header-services__link header-services__link--delivery" href="#">Доставка</a></li>
+										<li class="header-services__item header-services__item--guarantee"><a class="header-services__link header-services__link--guarantee" href="#">Гарантия</a></li>
+										<li class="header-services__item header-services__item--contacts"><a class="header-services__link header-services__link--contacts" href="#">Контакты</a></li>
+									</ul>
+								</nav>
+							<!-- header-services end -->
 						</div>
 					</div>
-				<!-- header-content end -->
-
-			</header>
-		<!-- header end -->
-
-
-
-		<!-- main start -->
-			<main class="main">
-				<div class="container">
-					<h1 class="main__title">Моноподы для селфи</h1>
 				</div>
+			<!-- header-content end -->
+
+		</header>
+	<!-- header end -->
+
+
+
+	<!-- main start -->
+		<main class="main">
+			<div class="container">
+				<h1 class="main__title">Моноподы для селфи</h1>
+			</div>
 				
 				<!-- breadcrumbs start -->
 					<div class="breadcrumbs">
