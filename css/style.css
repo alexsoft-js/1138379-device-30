@@ -1115,57 +1115,22 @@
                     padding-left: 80px;
                   }
 
-                  .catalog-form__fieldset:first-of-type {
+                  .catalog-form__fieldset-range {
                     margin-top: 70px;
                   }
 
-                  .catalog-form__legend {
+                  .catalog-form__legend-text {
+                    border-top: 2px solid var(--basic-black);
                     font-family: Gilroy, Arial, sans-serif;
                     font-size: 14px;
                     font-weight: 800;
                     line-height: 17px;
                     letter-spacing: 0.1em;
-                    margin-bottom: 30px;
-                  }
-
-                  .catalog-form__legend-text {
                     display: block;
-                    border-top: 2px solid var(--basic-black);
                     padding-top: 14px;
+                    margin-bottom: 30px;
                     width: 200px;
                   }
-
-                  .catalog-form__item {
-                    margin-bottom: 20px;
-                  }
-
-                  .catalog-form__label {
-                    padding-left: 42px;
-                    position: relative;
-                  }
-
-                  /* .catalog-form__label::before {
-                    content: "";
-                    position: absolute;
-                    background-image: url(../images/catalog-form/checkbox-on.svg);
-                    left: 0;
-                    top: 0;
-                    width: 24px;
-                    height: 24px;
-                  } */
-
-                  /* .catalog-form__label:hover::before {
-                    background-image: url(../images/catalog-form/checkbox-on-hover.svg);
-                  }
-
-                  .catalog-form__label--active::before {
-                    background-image: url(../images/catalog-form/checkbox-active.svg);
-                  }
-
-                  .catalog-form__label--active:hover::before {
-                    background-image: url(../images/catalog-form/checkbox-active-hover.svg);
-                    background-repeat: no-repeat;
-                  } */
 
                   .catalog-form__label-text {
                     font-family: 'Open Sans', sans-serif;
@@ -1174,8 +1139,93 @@
                     line-height: 24px;
                   }
 
+                  .catalog-form__fieldset-color {
+                    margin-bottom: 37px;
+                  }
+
+                  .catalog-form__item-color {
+                    margin-bottom: 15px;
+                  }
+
+                  .catalog-form__label-color {
+                    padding-left: 42px;
+                    position: relative;
+                    cursor: pointer;
+                    user-select: none
+                  }
+
+                  .catalog-form__input-color--checkbox+.catalog-form__label-color::before {
+                    content: "";
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    left: 0;
+                    width: 24px;
+                    height: 24px;
+                  }
+
+                  .catalog-form__input-color--checkbox+.catalog-form__label-color::before {
+                    background-image: url(../images/catalog-form/checkbox.svg);
+                  }
+
+                  .catalog-form__input-color--checkbox:checked+.catalog-form__label-color::before {
+                    background-image: url(../images/catalog-form/checkbox--active.svg);
+                  }
+
+                  .catalog-form__input-color+.catalog-form__label-color:hover::before {
+                    opacity: 0.6;
+                  }
+
+                  .catalog-form__input-color+.catalog-form__label-color:active::before {
+                    opacity: 1;
+                  }
+
+                  .catalog-form__fieldset-bluetooth {
+                    margin-bottom: 50px;
+                  }
+
+                  .catalog-form__item-bluetooth {
+                    margin-bottom: 16px;
+                  }
+
+                  .catalog-form__label-bluetooth {
+                    padding-left: 42px;
+                    position: relative;
+                    cursor: pointer;
+                    user-select: none;
+                  }
+
+                  .catalog-form__input-bluetooth--radio+.catalog-form__label-bluetooth::before {
+                    content: "";
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    left: 0;
+                    width: 24px;
+                    height: 24px;
+                  }
+
+                  .catalog-form__input-bluetooth--radio+.catalog-form__label-bluetooth::before{
+                    background-image: url(../images/catalog-form/radio.svg);
+                  }
+
+                  .catalog-form__input-bluetooth--radio:checked+.catalog-form__label-bluetooth::before{
+                    background-image: url(../images/catalog-form/radio--active.svg);
+                  }
+
+                  .catalog-form__input-bluetooth+.catalog-form__label-bluetooth:hover::before {
+                    opacity: 0.6;
+                  }
+
+                  .catalog-form__input-bluetooth+.catalog-form__label-bluetooth:active::before {
+                    opacity: 1;
+                  }
+
                   .catalog-form__button {
                     z-index: 1;
+                  }
+
+                  .catalog-form__button {
+                    padding: 10px 38px;
+                    width: 200px;
                   }
                 /* catalog-form end */
 
@@ -1195,18 +1245,54 @@
                     row-gap: 48px;
                   }
 
+                  .goods__product {
+                    position: relative;
+                    margin-bottom: 36px;
+                  }
+
+                  .goods__info-img:hover {
+                    opacity: 0.7;
+                  }
+
+                  .goods__hover {
+                    position: absolute;
+                    display: none;
+                    top: 166px;
+                    left: 77px;
+                    width: 220px;
+                  }
+
                   .goods__hover-add {
                     background-color: transparent;
                     z-index: 1;
+                    padding: 10px 38px;
+                    margin-bottom: 10px;
                   }
                 
                   .goods__hover-comparison {
                     background-color: transparent;
+                    opacity: 0.5;
                     font-family: 'Open Sans', sans-serif;
                     font-size: 13px;
                     font-weight: 300;
                     line-height:18px;
                     letter-spacing: 0.1em;
+                    width: 200px;
+                    text-align: center;
+                  }
+
+                  .goods__hover-comparison:hover {
+                    opacity: 1;
+                  }
+
+                  
+                  .goods__hover-comparison:active {
+                    opacity: 0.2;
+                  }
+
+                  .goods__info {
+                    display: flex;
+                    justify-content: space-between;
                   }
 
                   .goods__info-link {
@@ -1230,11 +1316,25 @@
                 /* goods-nav start */
                   .goods-nav {
                     background-color: var(--basic-cararra);
+                    display: grid;
+                    grid-template-rows: 70px;
+                    margin-bottom: 78px;
+                    margin-right: 20px;
+                    margin-left: 70px;
                   }
 
                   .goods-nav__list {
                     display: flex;
                     justify-content: space-between;
+                    align-items: center;
+                  }
+
+                  .goods-nav__link:hover {
+                    background-color: #D9D9D9;
+                  }
+
+                  .goods-nav__link:active {
+                    opacity: 0.3;
                   }
 
                   .goods-nav__list-number {
@@ -1243,6 +1343,11 @@
                     width: 85px;
                   }
 
+                  .goods-nav__link {
+                    padding: 25px 30px 25px 30px;
+                  }
+
+                  .goods-nav__link,
                   .goods-nav__link-number {
                     color: var(--basic-black);
                     font-family: Gilroy, Arial, sans-serif;
@@ -1255,6 +1360,14 @@
 
                   .goods-nav__link-number {
                     opacity: 0.3;
+                  }
+
+                  .goods-nav__link-number:hover {
+                    opacity: 0.6;
+                  }
+
+                  .goods-nav__link-number:active {
+                    opacity: 1;
                   }
 
                   .goods-nav__link-number--active {

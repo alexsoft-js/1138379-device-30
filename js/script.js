@@ -82,6 +82,3 @@ let headerCatalog = document.querySelector('.header-catalog');
     }
 // services end
 
-// catalog-form start
-
-// catalog-form end

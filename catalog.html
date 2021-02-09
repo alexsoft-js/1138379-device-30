@@ -54,7 +54,7 @@
 																<!-- header-search end -->
 
 															</li>
-															<li class="header-navigation__item header-navigation__item--login header-navigation__item-catalog header-navigation__item--login"><a class="header-navigation__link" href="#">Александр Павлович</a></li>
+															<li class="header-navigation__item header-navigation__item--login header-navigation__item-catalog header-navigation__item--login"><a class="header-navigation__link header-navigation__link--login" href="#">Александр Павлович</a></li>
 															<li class="header-navigation__item header-navigation__item--compare"><a class="header-navigation__link header-navigation__link--compare" href="#">Сравнить</a></li>
 															<li class="header-navigation__item header-navigation__item--cart"><a class="header-navigation__link header-navigation__link--cart" href="#">Корзина</a></li>
 														</ul>
@@ -170,49 +170,49 @@
 													
 													<!-- catalog-form start -->
 														<form class="catalog-form" action="https://echo.htmlacademy.ru" method="get">
-															<fieldset class="catalog-form__fieldset">
-																<legend class="catalog-form__legend"><span class="catalog-form__legend-text">Стоимость</span></legend>
+															<fieldset class="catalog-form__fieldset-range">
+																<legend class="catalog-form__legend-range"><span class="catalog-form__legend-text">Стоимость</span></legend>
 
 																	<!-- range-slider start -->
 
 																	<!-- range-slider end -->
 
 															</fieldset>
-															<fieldset class="catalog-form__fieldset">
-																<legend class="catalog-form__legend"><span class="catalog-form__legend-text">Цвет</span></legend>
-																	<ul class="catalog-form__list">
-																		<li class="catalog-form__item">
-																			<input class="catalog-form__input visually-hidden" name="black" type="checkbox" id="filter-black" checked>
-																			<label class="catalog-form__label catalog-form__label--active catalog-form__label-01" for="filter-black"><span class="catalog-form__label-text">Чёрный</span></label>
+															<fieldset class="catalog-form__fieldset-color">
+																<legend class="catalog-form__legend-color"><span class="catalog-form__legend-text">Цвет</span></legend>
+																	<ul class="catalog-form__list-color">
+																		<li class="catalog-form__item-color">
+																			<input class="catalog-form__input-color catalog-form__input-color--checkbox visually-hidden" name="black" type="checkbox" id="filter-black" checked>
+																			<label class="catalog-form__label-color" for="filter-black"><span class="catalog-form__label-text">Чёрный</span></label>
 																		</li>
-																		<li class="catalog-form__item">
-																			<input class="catalog-form__input visually-hidden" name="white" type="checkbox" id="filter-white">
-																			<label class="catalog-form__label catalog-form__label-02" for="filter-white"><span class="catalog-form__label-text">Белый</span></label>
+																		<li class="catalog-form__item-color">
+																			<input class="catalog-form__input-color catalog-form__input-color--checkbox visually-hidden" name="white" type="checkbox" id="filter-white">
+																			<label class="catalog-form__label-color" for="filter-white"><span class="catalog-form__label-text">Белый</span></label>
 																		</li>
-																		<li class="catalog-form__item">
-																			<input class="catalog-form__input visually-hidden" name="blue" type="checkbox" id="filter-blue" checked>
-																			<label class="catalog-form__label catalog-form__label--active catalog-form__label-03" for="filter-blue"><span class="catalog-form__label-text">Синий</span></label>
+																		<li class="catalog-form__item-color">
+																			<input class="catalog-form__input-color catalog-form__input-color--checkbox visually-hidden" name="blue" type="checkbox" id="filter-blue" checked>
+																			<label class="catalog-form__label-color" for="filter-blue"><span class="catalog-form__label-text">Синий</span></label>
 																		</li>
-																		<li class="catalog-form__item">
-																			<input class="catalog-form__input visually-hidden" name="red" type="checkbox" id="filter-red" checked>
-																			<label class="catalog-form__label catalog-form__label--active catalog-form__label-04" for="filter-red"><span class="catalog-form__label-text">Красный</span></label>
+																		<li class="catalog-form__item-color">
+																			<input class="catalog-form__input-color catalog-form__input-color--checkbox visually-hidden" name="red" type="checkbox" id="filter-red" checked>
+																			<label class="catalog-form__label-color" for="filter-red"><span class="catalog-form__label-text">Красный</span></label>
 																		</li>
-																		<li class="catalog-form__item">
-																			<input class="catalog-form__input visually-hidden" name="pink" type="checkbox" id="filter-pink" checked>
-																			<label class="catalog-form__label catalog-form__label-05" for="filter-pink"><span class="catalog-form__label-text">Розовый</span></label>
+																		<li class="catalog-form__item-color">
+																			<input class="catalog-form__input-color catalog-form__input-color--checkbox visually-hidden" name="pink" type="checkbox" id="filter-pink">
+																			<label class="catalog-form__label-color" for="filter-pink"><span class="catalog-form__label-text">Розовый</span></label>
 																		</li>
 																	</ul>
 															</fieldset>	
-															<fieldset class="catalog-form__fieldset">
-																<legend class="catalog-form__legend"><span class="catalog-form__legend-text">Bluetooth</span></legend>
-																	<ul class="fcatalog-form__list">
-																		<li class="catalog-form__item">
-																			<input class="catalog-form__input visually-hidden" name="bluetooth" type="radio" id="bluetooth-there-is" value="there-is">
-																			<label class="catalog-form__label" for="bluetooth-there-is">Есть</label>
+															<fieldset class="catalog-form__fieldset-bluetooth">
+																<legend class="catalog-form__legend-bluetooth"><span class="catalog-form__legend-text">Bluetooth</span></legend>
+																	<ul class="fcatalog-form__list-bluetooth">
+																		<li class="catalog-form__item-bluetooth">
+																			<input class="catalog-form__input-bluetooth catalog-form__input-bluetooth--radio visually-hidden" name="bluetooth" type="radio" id="bluetooth-yes" value="yes" checked>
+																			<label class="catalog-form__label-bluetooth" for="bluetooth-yes">Есть</label>
 																		</li>
-																		<li class="fcatalog-form__item">
-																			<input class="catalog-form__input visually-hidden" name="bluetooth" type="radio" id="bluetooth-no" value="no">
-																			<label class="catalog-form__label" for="bluetooth-no">Нет</label>
+																		<li class="fcatalog-form__item-bluetooth">
+																			<input class="catalog-form__input-bluetooth catalog-form__input-bluetooth--radio visually-hidden" name="bluetooth" type="radio" id="bluetooth-no" value="no">
+																			<label class="catalog-form__label-bluetooth" for="bluetooth-no">Нет</label>
 																		</li>
 																	</ul>
 															</fieldset>	
