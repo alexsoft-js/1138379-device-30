@@ -969,14 +969,14 @@
           .catalog-top {
             background-image: linear-gradient(to right,
                             var(--basic-gainsboro) 0,
-                            var(--basic-gainsboro) 34.9%,
+                            var(--basic-gainsboro) 30.2%,
                             var(--basic-cararra) 28%,
                             var(--basic-cararra) 100%);
           }
 
           .catalog-top__inner {
             display: grid;
-            grid-template-columns: 350px 850px;
+            grid-template-columns: 328px 828px;
             grid-template-rows: 70px;
           }
 
@@ -1015,7 +1015,7 @@
               }
 
               .catalog-sorting__list--sort {
-                margin-right: 190px;
+                margin-right: 210px;
               }
 
               .catalog-sorting__item--price,
@@ -1105,7 +1105,7 @@
           .catalog-content {
           background-image: linear-gradient(to right,
                           var(--basic-gallery) 0,
-                          var(--basic-gallery) 34.9%,
+                          var(--basic-gallery) 30.2%,
                           var(--basic-white) 28%,
                           var(--basic-white) 100%);
           }
@@ -1113,7 +1113,7 @@
 
           .catalog-content__inner {
             display: grid;
-            grid-template-columns: 350px 850px;
+            grid-template-columns: 328px 828px;
           }
 
             /* catalog-left start */
@@ -1243,13 +1243,15 @@
 
                 /* goods start */
                   .goods {
-                    margin: 70px 20px 40px 70px;
+                    margin-top: 58px;
+                    margin-bottom: 78px;
+                    margin-left: 70px;  
                   }
 
                   .goods__list {
                     display: grid;
                     grid-template-columns: 360px 360px;
-                    column-gap: 40px;
+                    column-gap: 39px;
                     row-gap: 48px;
                   }
 
@@ -1325,9 +1327,9 @@
                   .goods-nav {
                     background-color: var(--basic-cararra);
                     display: grid;
+                    grid-template-columns: 760px;
                     grid-template-rows: 70px;
                     margin-bottom: 78px;
-                    margin-right: 20px;
                     margin-left: 70px;
                   }
 
@@ -1438,6 +1440,10 @@
           opacity: 0.3;
         }
 
+        .footer-navigation__link--cart {
+          margin-right: 6px;
+        }
+
         .footer-navigation__item-catalog::after {
           content: "Выйти";
           color: rgba(255, 255, 255, 0.7);
@@ -1495,6 +1501,7 @@
           font-size: 15px;
           font-weight: 300;
           line-height: 20px;
+          margin-right: 6px;
         }
 
         .footer-services__list {
@@ -1565,6 +1572,10 @@
 
         .footer-social__icon-img:active {
           opacity: 0.1;
+        }
+
+        .footer-social__htmlacademy-img {
+          margin-right: 6px;
         }
 
         .footer-social__htmlacademy-img:hover {
