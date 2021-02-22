@@ -1,7 +1,7 @@
 /* global-element start */
 @font-face {
   font-family: "Open Sans";
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   src: url(../fonts/opensanslight.woff2) format('woff2'),
        url(../fonts/opensanslight.woff) format('woff');
@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: "Open Sans";
-  font-weight: 700;
+  font-weight: 800;
   font-style: normal; 
   src: url(../fonts/opensans.woff2) format('woff2'),
        url(../fonts/opensans.woff) format('woff');
@@ -17,7 +17,7 @@
 
 @font-face {
   font-family: Gilroy;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   src: url(../fonts/gilroylight.woff2) format('woff2'),
        url(../fonts/gilroylight.woff) format('woff');
@@ -25,7 +25,7 @@
 
 @font-face {
     font-family: Gilroy;
-    font-weight: 700;
+    font-weight: 800;
     font-style: normal;
     src: url(../fonts/gilroyextrabold.woff2) format('woff2'),
          url(../fonts/gilroyextrabold.woff) format('woff');
@@ -969,7 +969,7 @@
           .catalog-top {
             background-image: linear-gradient(to right,
                             var(--basic-gainsboro) 0,
-                            var(--basic-gainsboro) 30.2%,
+                            var(--basic-gainsboro) 33.5%,
                             var(--basic-cararra) 28%,
                             var(--basic-cararra) 100%);
           }
@@ -1105,7 +1105,7 @@
           .catalog-content {
           background-image: linear-gradient(to right,
                           var(--basic-gallery) 0,
-                          var(--basic-gallery) 30.2%,
+                          var(--basic-gallery) 33.5%,
                           var(--basic-white) 28%,
                           var(--basic-white) 100%);
           }
@@ -1260,13 +1260,17 @@
                     margin-bottom: 36px;
                   }
 
-                  .goods__info-img:hover {
+                  .goods__product:hover .goods__info-img {
                     opacity: 0.7;
                   }
 
                   .goods__hover {
-                    position: absolute;
                     display: none;
+                  }
+
+                  .goods__product:hover .goods__hover{
+                    position:absolute;
+                    display: block;
                     top: 166px;
                     left: 77px;
                     width: 220px;
